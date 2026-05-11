@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>GoDrop - WhatsApp Logistics Infrastructure</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+
+body{
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+/* FAQ */
+#faq{
+background:#dcfce7;
+padding:40px 20px;
+}
+
+.faq-container{
+max-width:900px;
+margin:auto;
+}
+
+.faq-item{
+background:#16a34a;
+color:white;
+margin-bottom:15px;
+border-radius:14px;
+overflow:hidden;
+cursor:pointer;
+transition:0.3s;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.faq-item:hover{
+background:#15803d;
+}
+
+.faq-question{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 22px;
+font-weight:700;
+font-size:18px;
+}
+
+.faq-answer{
+max-height:0;
+overflow:hidden;
+transition:max-height .4s ease;
+padding:0 22px;
+line-height:1.8;
+}
+
+.faq-item.active .faq-answer{
+max-height:300px;
+padding:0 22px 22px;
+}
+
+.faq-item .icon{
+font-size:25px;
+transition:0.3s;
+}
+
+.faq-item.active .icon{
+transform:rotate(45deg);
+}
+</style>
+
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- TOP WHITE HEADER -->
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+    <!-- LOGO -->
+    <div class="flex items-center">
+      <img 
+      src="https://i.postimg.cc/L8MLdq2y/IMG-20260509-WA0002-(1).jpg"
+      alt="GoDrop Logo"
+      class="h-12 w-auto rounded-xl object-cover">
+    </div>
+
+    <!-- WHATSAPP BUTTON -->
+    <a href="https://wa.me/2348163175674"
+    class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition">
+      Message Us
+    </a>
+
+  </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="relative min-h-screen bg-[#16a34a] flex items-center justify-center overflow-hidden">
+
+<div class="absolute inset-0 opacity-10">
+<div class="absolute top-0 left-0 w-72 h-72 bg-white rounded-full blur-3xl"></div>
+<div class="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+</div>
+
+<div class="container mx-auto px-6 text-center text-white relative z-10">
+
+<h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+GoDrop
+</h1>
+
+<p class="text-2xl md:text-3xl font-semibold mb-8 text-green-100">
+WhatsApp-first logistics operating infrastructure for emerging markets.
+</p>
+
+<p class="max-w-3xl mx-auto text-lg leading-9 mb-12 text-green-50">
+We help businesses and customers request deliveries through WhatsApp while GoDrop structures order intake, coordinates dispatch, and prepares jobs for rider execution.
+</p>
+
+<div class="flex flex-col sm:flex-row gap-5 justify-center">
+
+<a href="https://wa.me/2348163175674"
+class="bg-white text-green-700 font-bold px-10 py-5 rounded-full shadow-2xl hover:scale-105 transition duration-300">
+Request a Delivery
+</a>
+
+<a href="mailto:godropng@gmail.com"
+class="border-2 border-white px-10 py-5 rounded-full font-semibold hover:bg-white hover:text-green-700 transition duration-300">
+Email Us
+</a>
+
+</div>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+<section class="py-24 bg-white">
+<div class="container mx-auto px-6">
+
+<h2 class="text-5xl font-extrabold text-center mb-5">
+📦 What is GoDrop?
+</h2>
+
+<!-- IMAGE -->
+<!-- IMAGE -->
+<div class="w-screen relative left-1/2 right-1/2 -translate-x-1/2 mb-14">
+  <div class="flex justify-center px-4">
+    <img
+      src="https://i.postimg.cc/VkfGQs9f/Screenshot-2026-05-10-00-37-57-996-com-whatsapp-(1).jpg"
+      alt="What is GoDrop"
+      class="w-full max-w-6xl rounded-3xl shadow-2xl"
+      style="image-rendering:auto;"
+    />
+  </div>
+</div>
+<p class="text-lg text-center max-w-4xl mx-auto leading-9 mb-14">
+GoDrop is a WhatsApp-first logistics operating system built for African cities.
+Many deliveries still rely on fragmented chats, manual coordination, unclear addresses, and inconsistent rider availability, leading to delays and inefficient operations.
+</p>
+
+<p class="text-lg text-center max-w-4xl mx-auto leading-9">
+GoDrop structures this process by organizing customer requests, preparing dispatch-ready delivery jobs, and coordinating rider assignment through familiar WhatsApp workflows.
+Already operating in live delivery environments, GoDrop is building the logistics coordination infrastructure designed for the realities of emerging markets.
+</p>
+
+</div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="py-24 bg-gray-50">
+
+<div class="container mx-auto px-6">
+
+<h2 class="text-5xl font-extrabold text-center mb-5">
+⚡ How GoDrop Works
+</h2>
+
+<!-- SINGLE IMAGE -->
+<div class="w-screen relative left-1/2 right-1/2 -translate-x-1/2 mb-14">
+  <div class="flex justify-center px-4">
+    <img
+      src="https://i.postimg.cc/kXcscr0f/Screenshot-2026-05-10-00-34-02-516-com-openai-chatgpt-(1).jpg"
+      alt="How GoDrop Works"
+      class="w-full max-w-6xl rounded-3xl shadow-2xl"
+      style="image-rendering:auto;"
+    />
+  </div>
+</div>
+
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+<!-- CARD -->
+<div class="bg-white rounded-3xl shadow-xl p-8 text-center hover:-translate-y-2 transition duration-300">
+
+<div class="text-6xl mb-6">
+📲
+</div>
+
+<h3 class="text-2xl font-bold mb-4 text-green-700">
+1. Customer Request
+</h3>
+
+<p class="text-gray-600 leading-8">
+Customer sends pickup and drop-off details on WhatsApp.
+</p>
+
+</div>
+
+<!-- CARD -->
+<div class="bg-white rounded-3xl shadow-xl p-8 text-center hover:-translate-y-2 transition duration-300">
+
+<div class="text-6xl mb-6">
+🧠
+</div>
+
+<h3 class="text-2xl font-bold mb-4 text-green-700">
+2. Smart Structuring
+</h3>
+
+<p class="text-gray-600 leading-8">
+GoDrop structures delivery information and requests clarification where needed.
+</p>
+
+</div>
+
+<!-- CARD -->
+<div class="bg-white rounded-3xl shadow-xl p-8 text-center hover:-translate-y-2 transition duration-300">
+
+<div class="text-6xl mb-6">
+🏍️
+</div>
+
+<h3 class="text-2xl font-bold mb-4 text-green-700">
+3. Rider Assignment
+</h3>
+
+<p class="text-gray-600 leading-8">
+A nearby rider is assigned for delivery execution.
+</p>
+
+</div>
+
+<!-- CARD -->
+<div class="bg-white rounded-3xl shadow-xl p-8 text-center hover:-translate-y-2 transition duration-300">
+
+<div class="text-6xl mb-6">
+📦
+</div>
+
+<h3 class="text-2xl font-bold mb-4 text-green-700">
+4. Coordination
+</h3>
+
+<p class="text-gray-600 leading-8">
+GoDrop coordinates delivery execution and handles delivery exceptions.
+</p>
+
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- TRACTION -->
+<section class="py-24 bg-[#16a34a]">
+
+<div class="container mx-auto px-6 text-center">
+
+<h2 class="text-5xl font-extrabold mb-8 text-black">
+🚀 Growing Fast
+</h2>
+
+<p class="text-xl mb-16 text-black max-w-3xl mx-auto leading-9">
+GoDrop is already being used in real delivery environments with active dispatch coordination, returning customers, and continuous operational growth.
+</p>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="bg-white rounded-3xl p-10 shadow-2xl">
+<div class="text-6xl mb-5">
+📦
+</div>
+
+<h3 class="text-3xl font-extrabold mb-4 text-black">
+Hundreds
+</h3>
+
+<p class="text-lg text-gray-700 font-medium leading-8">
+Successful deliveries completed across active operations.
+</p>
+</div>
+
+<div class="bg-white rounded-3xl p-10 shadow-2xl">
+<div class="text-6xl mb-5">
+🔁
+</div>
+
+<h3 class="text-3xl font-extrabold mb-4 text-black">
+Repeat Customers
+</h3>
+
+<p class="text-lg text-gray-700 font-medium leading-8">
+Customers continue using GoDrop for reliable delivery coordination.
+</p>
+</div>
+
+<div class="bg-white rounded-3xl p-10 shadow-2xl">
+<div class="text-6xl mb-5">
+⚡
+</div>
+
+<h3 class="text-3xl font-extrabold mb-4 text-black">
+Daily Activity
+</h3>
+
+<p class="text-lg text-gray-700 font-medium leading-8">
+Real dispatch operations happening consistently in live environments.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- WHY GODROP -->
+<section class="py-24 bg-white">
+
+<div class="container mx-auto px-6">
+
+<h2 class="text-5xl font-extrabold text-center mb-14">
+💡 Why Choose GoDrop?
+</h2>
+
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+<div class="bg-white rounded-3xl shadow-xl p-8 text-center">
+<div class="text-5xl mb-5">💬</div>
+<h3 class="text-2xl font-bold mb-3">WhatsApp-first</h3>
+<p class="text-gray-600 leading-8">
+Built around the communication platform people already use daily.
+</p>
+</div>
+
+<div class="bg-white rounded-3xl shadow-xl p-8 text-center">
+<div class="text-5xl mb-5">🧭</div>
+<h3 class="text-2xl font-bold mb-3">Structured Dispatch</h3>
+<p class="text-gray-600 leading-8">
+Organized logistics coordination that reduces confusion and delays.
+</p>
+</div>
+
+<div class="bg-white rounded-3xl shadow-xl p-8 text-center">
+<div class="text-5xl mb-5">🌍</div>
+<h3 class="text-2xl font-bold mb-3">Built for Africa</h3>
+<p class="text-gray-600 leading-8">
+Designed specifically for local delivery realities across African cities.
+</p>
+</div>
+
+<div class="bg-white rounded-3xl shadow-xl p-8 text-center">
+<div class="text-5xl mb-5">📈</div>
+<h3 class="text-2xl font-bold mb-3">Scalable</h3>
+<p class="text-gray-600 leading-8">
+Designed to grow across multiple cities and operational environments.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- CTA -->
+<section class="py-24 bg-white">
+
+<div class="container mx-auto px-6 text-center">
+
+<h2 class="text-5xl md:text-6xl font-extrabold mb-8 text-green-600 leading-tight">
+Building logistics coordination infrastructure for African cities.
+</h2>
+<!-- IMAGE -->
+<div class="w-screen relative left-1/2 right-1/2 -translate-x-1/2 mb-14">
+  <div class="flex justify-center px-4">
+    <img
+      src="https://i.postimg.cc/C5CNX9zj/Screenshot-2026-05-10-00-33-52-977-com-openai-chatgpt-(1).jpg"
+      alt="Building logistics coordination infrastructure for African cities."
+      class="w-full max-w-6xl rounded-3xl shadow-2xl"
+      style="image-rendering:auto;"
+    />
+  </div>
+</div>
+<p class="text-xl max-w-3xl mx-auto leading-9 mb-12">
+GoDrop is creating the operational layer that helps businesses and customers coordinate deliveries more efficiently through familiar communication channels.
+</p>
+
+<a href="https://wa.me/2348163175674"
+class="bg-green-600 hover:bg-green-700 text-white font-bold px-10 py-5 rounded-full shadow-2xl transition duration-300 inline-block">
+💬 Message Us on WhatsApp
+</a>
+
+</div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+
+<h1 class="text-5xl font-extrabold text-center mb-14">
+GoDrop FAQ
+</h1>
+
+<div class="faq-container">
+
+<div class="faq-item">
+<div class="faq-question">
+How are delivery prices calculated?
+<span class="icon">+</span>
+</div>
+
+<div class="faq-answer">
+Prices are based on distance, route conditions, pickup and drop-off accessibility, and delivery type.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+Do you handle park pickups and waybills?
+<span class="icon">+</span>
+</div>
+
+<div class="faq-answer">
+Yes. We handle park pickups, waybills, and other special delivery requests. Additional handling fees may apply depending on the location.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+How do I request a delivery?
+<span class="icon">+</span>
+</div>
+
+<div class="faq-answer">
+Simply send your pickup and drop-off details through WhatsApp and GoDrop will coordinate the process.
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">
+What cities do you operate in?
+<span class="icon">+</span>
+</div>
+
+<div class="faq-answer">
+GoDrop is expanding across African cities and currently operates in active local delivery environments.
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<section class="bg-white py-14">
+
+<div class="container mx-auto px-6">
+
+<h2 class="text-2xl font-bold mb-6">
+GoDrop
+</h2>
+
+<nav class="flex flex-col space-y-4 text-sm font-medium mb-8">
+
+<a href="#" class="hover:text-green-700">
+About
+</a>
+
+<a href="#" class="hover:text-green-700">
+How It Works
+</a>
+
+<a href="#" class="hover:text-green-700">
+FAQ
+</a>
+
+<a href="#" class="hover:text-green-700">
+Contact
+</a>
+
+</nav>
+
+<div class="text-center">
+
+<p class="text-gray-600 text-sm">
+Contact us at
+<a href="mailto:godropng@gmail.com"
+class="text-black underline hover:text-green-700">
+godropng@gmail.com
+</a>
+</p>
+
+<p class="text-gray-500 text-sm mt-4">
+© 2026 GoDrop. All rights reserved.
+</p>
+
+</div>
+
+</div>
+</section>
+
+<script>
+document.querySelectorAll('#faq .faq-item').forEach(item => {
+item.querySelector('.faq-question').addEventListener('click', () => {
+item.classList.toggle('active');
+});
+});
+</script>
+
+</body>
+</html>
